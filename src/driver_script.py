@@ -36,7 +36,7 @@ def get_all_images_as_nparray(folder_path):
   return np.asarray(data),np.asarray(labels)
 
 (test_data,test_labels) = get_all_images_as_nparray('./demoDeepLearningProject/data/test/')
-(train_data,train_labels) = get_all_images_as_nparray('/demoDeepLearningProject/data/train/')
+(train_data,train_labels) = get_all_images_as_nparray('./demoDeepLearningProject/data/train/')
 
 test_labels = test_labels[:, None]
 train_labels = train_labels[:, None]
